@@ -1,9 +1,13 @@
 import os
 import shutil
 
-maven_path = os.environ['HOME'] + "/Downloads/files-2.1/"
+# 缓存目录
+gradle_cache_path = os.environ['HOME'] + "/Downloads/files-2.1/"
 # maven_path = os.environ['HOME'] + "/.gradle/caches/modules-2/files-2.1/"
+# 格式化输出目录
 m2_path = os.environ['HOME'] + "/Downloads/temp/release/"
+
+# 需要格式化的包路径
 group_ids = [
     "com.ymm.lib",
     "com.amh.lib",
@@ -63,7 +67,7 @@ def find_copy_files(group_id, root):
 
 # 1.遍历指定目录
 for path in group_ids:
-    real_path = maven_path + path
+    real_path = gradle_cache_path + path
     print(f"要遍历的目录:\n{real_path}")
     print("")
     find_copy_files(path, real_path)
