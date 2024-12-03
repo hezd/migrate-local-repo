@@ -9,14 +9,23 @@ m2_path = os.environ['HOME'] + "/Downloads/temp/release/"
 
 # 需要格式化的包路径
 group_ids = [
+    "com.mb.gradle.plugin",
     "com.ymm.lib",
     "com.amh.lib",
     "com.mb.lib",
     "com.wlqq.android",
+    "com.ymm.lib.widget",
     "com.ymm.biz",
     "com.ymm.common-plugins",
     "com.manbang.android",
     "com.manbang.biz",
+    "io.manbang.frontend",
+    "io.manbang",
+    "io.socket",
+    "com.ymm.plugin.aar",
+    "com.ymm.biz.module.aar",
+    "com.amh.biz",
+    "com.github.zyyoona7",
 ]
 
 
